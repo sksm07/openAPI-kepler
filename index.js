@@ -2,7 +2,7 @@ const catInfo = document.querySelector(".cat-info");
 const fetchACat = document.querySelector(".fetch_cat_btn");
 
 fetchACat.addEventListener("click", () => {
-  
+
 fetch("https://api.thecatapi.com/v1/images/search?has_breeds=1&limit=1&api_key=ddf4d0ec-c0dc-46f0-a44c-953076bee7a8")
   .then((res) =>{
     if(!res.ok){
@@ -20,6 +20,7 @@ fetch("https://api.thecatapi.com/v1/images/search?has_breeds=1&limit=1&api_key=d
     const catBreedTitle = document.createElement("h2");
     catBreedTitle.innerText = breedName;
     
+    //cat image
     let catImgUrl = data[0].url;
     const catImg = document.createElement("img");
     catImg.src = catImgUrl;
