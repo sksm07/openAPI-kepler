@@ -29,7 +29,7 @@
 
   .fetch_cat_btn {
     display: block;
-    margin: 5rem auto 0;
+    margin: 3rem auto 0;
     justify-content: center;
     align-self: center;
     padding: 1rem 2rem;
@@ -52,14 +52,33 @@
     transform: scale(0.98);
   }
 
+  .toggle_api_btn {
+    display: block;
+    margin: 3rem auto 0;
+    justify-content: center;
+    align-self: center;
+    /*margin-right: 10px;*/
+    padding: 0.75rem 1.25rem;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .toggle_api_btn:hover {
+    background-color: #0b7dda;
+  }
+
   .cat-info h2 {
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 1rem;
   }
 
   .cat-info img {
       display: block;
       margin: 0 auto;
+      margin: 2rem auto 0;
   }
 
   .cat-info p {
