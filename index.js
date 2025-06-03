@@ -4,10 +4,14 @@ const toggleApiBtn = document.querySelector(".toggle_api_btn");
 
 let useBreedEndPoint = true;
 
+//toggle button conditional check
+
 toggleApiBtn.addEventListener("click", () => {
   useBreedEndPoint = !useBreedEndPoint;
   toggleApiBtn.innerText = useBreedEndPoint ? "Toggle Breed Info (ON)" : "Toggle Breed Info (OFF)";
 })
+
+// sending fetch req conditionally
 
 fetchACat.addEventListener("click", () => {
 
